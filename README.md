@@ -26,19 +26,21 @@ Some data engineering peers complained on the [Knowledge platform](knowledge.uda
 
 
 ### Steps
-* Inspected the [project repository](https://github.com/udacity/cd12380-data-pipelines-with-airflow) provided by the client, which includes the following folders and files: 
-- [README](https://github.com/udacity/cd12380-data-pipelines-with-airflow?tab=readme-ov-file) file with requirements and instructions, 
--- [dags](https://github.com/udacity/cd12380-data-pipelines-with-airflow/tree/main/dags)
---- [final_project.py](https://github.com/udacity/cd12380-data-pipelines-with-airflow/blob/main/dags/final_project.py) script containing one dag and nine tasks. 
--- [plugins](https://github.com/udacity/cd12380-data-pipelines-with-airflow/tree/main/plugins)
---- [helpers](https://github.com/udacity/cd12380-data-pipelines-with-airflow/tree/main/plugins/helpers)
----- [sql_queries.py](https://github.com/udacity/cd12380-data-pipelines-with-airflow/blob/main/plugins/helpers/sql_queries.py) script containing a helper class with all necessary SQL transformations to execute using custom operators. 
---- [operators](https://github.com/udacity/cd12380-data-pipelines-with-airflow/tree/main/plugins/operators) folder containing 4 custom operator starter codes: 
----- [data_quality.py](https://github.com/udacity/cd12380-data-pipelines-with-airflow/blob/main/plugins/operators/data_quality.py)
------ [load_dimension.py](https://github.com/udacity/cd12380-data-pipelines-with-airflow/blob/main/plugins/operators/load_dimension.py)
------ [load_fact.py](https://github.com/udacity/cd12380-data-pipelines-with-airflow/blob/main/plugins/operators/load_fact.py)
------ [stage_redshift.py](https://github.com/udacity/cd12380-data-pipelines-with-airflow/blob/main/plugins/operators/stage_redshift.py)
-- [create_tables.sql](https://github.com/udacity/cd12380-data-pipelines-with-airflow/blob/main/create_tables.sql)
+
+* Inspected the [project repository](https://github.com/udacity/cd12380-data-pipelines-with-airflow) provided by the client, which includes the following folders and files:
+
+- [README](https://github.com/udacity/cd12380-data-pipelines-with-airflow?tab=readme-ov-file) – file with requirements and instructions  
+- [create_tables.sql](https://github.com/udacity/cd12380-data-pipelines-with-airflow/blob/main/create_tables.sql)  
+- [dags](https://github.com/udacity/cd12380-data-pipelines-with-airflow/tree/main/dags)  
+  - [final_project.py](https://github.com/udacity/cd12380-data-pipelines-with-airflow/blob/main/dags/final_project.py) – script containing one DAG and nine tasks  
+- [plugins](https://github.com/udacity/cd12380-data-pipelines-with-airflow/tree/main/plugins)  
+  - [helpers](https://github.com/udacity/cd12380-data-pipelines-with-airflow/tree/main/plugins/helpers)  
+    - [sql_queries.py](https://github.com/udacity/cd12380-data-pipelines-with-airflow/blob/main/plugins/helpers/sql_queries.py) – helper class with all necessary SQL transformations  
+  - [operators](https://github.com/udacity/cd12380-data-pipelines-with-airflow/tree/main/plugins/operators)  
+    - [data_quality.py](https://github.com/udacity/cd12380-data-pipelines-with-airflow/blob/main/plugins/operators/data_quality.py)  
+    - [load_dimension.py](https://github.com/udacity/cd12380-data-pipelines-with-airflow/blob/main/plugins/operators/load_dimension.py)  
+    - [load_fact.py](https://github.com/udacity/cd12380-data-pipelines-with-airflow/blob/main/plugins/operators/load_fact.py)  
+    - [stage_redshift.py](https://github.com/udacity/cd12380-data-pipelines-with-airflow/blob/main/plugins/operators/stage_redshift.py)
 
 
 #### create_tables.sql
