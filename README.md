@@ -20,9 +20,9 @@ This included creating custom operators to execute essential functions like stag
 
 
 ### Datasets
-- AWS S3: US West AWS Region
-- Log data: `s3://udacity-dend/log_data`
-- Song data: `s3://udacity-dend/song_data`
+	- AWS S3: US West AWS Region
+	- Log data: `s3://udacity-dend/log_data`
+	- Song data: `s3://udacity-dend/song_data`
 
 Some data engineering peers complained on the [Knowledge platform](knowledge.udacity.com) that they either had problems or weren't able to complete copying the datasets to their S3 buckets, so I decided to not copy the data but use it directly from the source.
 
@@ -66,11 +66,11 @@ Some data engineering peers complained on the [Knowledge platform](knowledge.uda
 ![Initial DAG](https://github.com/udacity/cd12380-data-pipelines-with-airflow/blob/main/assets/final_project_dag_graph1.png)
 
 * Added `default parameters` according to these guidelines:
-- The DAG does not have dependencies on past runs
-- On failure, the task are retried 3 times
-- Retries happen every 5 minutes
-- Catchup is turned off
-- Do not email on retry
+	- The DAG does not have dependencies on past runs
+	- On failure, the task are retried 3 times
+	- Retries happen every 5 minutes
+	- Catchup is turned off
+	- Do not email on retry
 
 * Added the task dependencies following the requirements shown in the image below:
 
@@ -80,11 +80,11 @@ Some data engineering peers complained on the [Knowledge platform](knowledge.uda
 
 #### Operators
 * Built four different operators that will: 
-- accesses my Redshift Serverless credentials and target database from the Airflow UI Connections, 
-- run SQL statements against my Redshift database, 
-- stage the data from S3 bucket to the database, 
-- transform the data, and 
-- run checks on data quality.
+	- accesses my Redshift Serverless credentials and target database from the Airflow UI Connections, 
+	- run SQL statements against my Redshift database, 
+	- stage the data from S3 bucket to the database, 
+	- transform the data, and 
+	- run checks on data quality.
 
 
 
