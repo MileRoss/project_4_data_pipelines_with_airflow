@@ -11,11 +11,11 @@ This included creating custom operators to execute essential functions like stag
 
 
 ### Tools
-- Local machine: MacBookAir, M1, 2020, Chip: Apple M1, Memory: 8 GB, macOS: Sequoia 15.4.1.
-- Google Chrome: Version 136.0.7103.93 (Official Build) (arm64)
-- Terminal: Version 2.14 (455.1)
-- Apache Airflow 2.8.1 via Docker
-- AWS console: IAM, Redshift Serverless
+	- Local machine: MacBookAir, M1, 2020, Chip: Apple M1, Memory: 8 GB, macOS: Sequoia 15.4.1.
+	- Google Chrome: Version 136.0.7103.93 (Official Build) (arm64)
+	- Terminal: Version 2.14 (455.1)
+	- Apache Airflow 2.8.1 via Docker
+	- AWS console: IAM, Redshift Serverless
 
 
 
