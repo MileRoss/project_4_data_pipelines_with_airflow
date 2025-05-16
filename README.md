@@ -66,7 +66,6 @@ Some data engineering peers complained on the [Knowledge platform](knowledge.uda
 ![Initial DAG](https://github.com/udacity/cd12380-data-pipelines-with-airflow/blob/main/assets/final_project_dag_graph1.png)
 
 * Added `default parameters` according to these guidelines:
-
 	- The DAG does not have dependencies on past runs
 	- On failure, the task are retried 3 times
 	- Retries happen every 5 minutes
@@ -80,7 +79,7 @@ Some data engineering peers complained on the [Knowledge platform](knowledge.uda
 
 
 #### Operators
-* Built four different operators that will:  
+* Built four different operators that will: 
 	- accesses my Redshift Serverless credentials and target database from the Airflow UI Connections, 
 	- run SQL statements against my Redshift database, 
 	- stage the data from S3 bucket to the database, 
@@ -137,15 +136,16 @@ If the password field appears empty and with no dots, your DAG will fail to conn
 
 ### DAG fails, you checked everything and you don't know why
 Maybe some of the starter code is deprecated?  
-At the time of this project, Airflow 3 was released, yet some of Udacity's code was deprecated even for the Airflow 2.  
-Example used in the project that is deprecated, may still work or fail: from airflow.operators.dummy import DummyOperator
-Example used in the training material, context templating exercises: prev_execution_date, next_execution_date
-These are removed from the airflow 3 and will cause dag errors if not replaced. [Source](https://airflow.apache.org/docs/apache-airflow/stable/installation/upgrading_to_airflow3.html)  
-
+At the time of this project, Airflow 3 was released, yet some of Udacity's code was deprecated even for the Airflow 2. 2 examples:  
+1. One operator that you need for the project, it is deprecated, but may still work or fail:  
+from airflow.operators.dummy import DummyOperator  
+2. Before the project, in the training material for context templating exercises:  
+prev_execution_date, next_execution_date  
+These are removed from the airflow 3 and will cause dag errors if not replaced.
 
 
 ## Recommendation
-Do this project on your local machine.  
+### Do this project on your local machine.  
 You’ll have more opportunities to make mistakes that way; those safe mistakes that we can learn from! This learning time is your chance to make mess that won't cost you or your company in € because you're working with sample data.  
 If you choose to work in Udacity's integrated workspace, where all the settings and dependencies are handled for you, there may be less stress and "why is the code not working", but you're denying yourself one valuable source of learning.  
 
