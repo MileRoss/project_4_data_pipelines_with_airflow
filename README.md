@@ -33,16 +33,16 @@ Some data engineering peers complained on the [Knowledge platform](knowledge.uda
 
 * Inspected the client-provided [project repository](https://github.com/udacity/cd12380-data-pipelines-with-airflow), which includes the following folders and files:
 
-- [README](https://github.com/udacity/cd12380-data-pipelines-with-airflow?tab=readme-ov-file) – file with requirements and instructions  
+- [README](https://github.com/udacity/cd12380-data-pipelines-with-airflow?tab=readme-ov-file) file contains the client's requirements and instructions  
 
-- [create_tables.sql](https://github.com/udacity/cd12380-data-pipelines-with-airflow/blob/main/create_tables.sql)  
-
-- [dags](https://github.com/udacity/cd12380-data-pipelines-with-airflow/tree/main/dags)  
-  - [final_project.py](https://github.com/udacity/cd12380-data-pipelines-with-airflow/blob/main/dags/final_project.py) – script containing one DAG and nine tasks  
+- [create_tables.sql](https://github.com/udacity/cd12380-data-pipelines-with-airflow/blob/main/create_tables.sql) file to create tables in Redshift
 
 - [plugins](https://github.com/udacity/cd12380-data-pipelines-with-airflow/tree/main/plugins)  
-  - [helpers](https://github.com/udacity/cd12380-data-pipelines-with-airflow/tree/main/plugins/helpers)  
-    - [sql_queries.py](https://github.com/udacity/cd12380-data-pipelines-with-airflow/blob/main/plugins/helpers/sql_queries.py) – helper class with all necessary SQL transformations  
+  - [helpers](https://github.com/udacity/cd12380-data-pipelines-with-airflow/tree/main/plugins/helpers): 
+  [sql_queries.py](https://github.com/udacity/cd12380-data-pipelines-with-airflow/blob/main/plugins/helpers/sql_queries.py) - helper class to insert data into the tables created with create_tables.sql
+
+- [dags](https://github.com/udacity/cd12380-data-pipelines-with-airflow/tree/main/dags): 
+[final_project.py](https://github.com/udacity/cd12380-data-pipelines-with-airflow/blob/main/dags/final_project.py) script contains one DAG and nine tasks  
 
   - [operators](https://github.com/udacity/cd12380-data-pipelines-with-airflow/tree/main/plugins/operators)  
     - [data_quality.py](https://github.com/udacity/cd12380-data-pipelines-with-airflow/blob/main/plugins/operators/data_quality.py)  
@@ -55,7 +55,7 @@ Some data engineering peers complained on the [Knowledge platform](knowledge.uda
 #### Create tables
 * Connected to my AWS Console with Udacity credentials. 
 * Configured my Redshift Serverless data warehouse to be associated with my existing IAM role, and to be publicly available.
-* In Query Editor v2 successfuly ran the `create_tables.sql` code, which created 7 tables.
+* In Query Editor v2 successfuly ran the `create_tables.sql` code, which created 7 tables in star schema.
 
 
 
