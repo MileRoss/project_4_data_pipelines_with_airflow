@@ -31,24 +31,24 @@ Some data engineering peers complained on the [Knowledge platform](knowledge.uda
 
 ### Steps
 
-* Inspected the client-provided [project repository](https://github.com/udacity/cd12380-data-pipelines-with-airflow), which includes the following folders and files:
+* Inspected the client-provided [project repository](https://github.com/udacity/cd12380-data-pipelines-with-airflow), and used the following folders and files:
 
-- [README](https://github.com/udacity/cd12380-data-pipelines-with-airflow?tab=readme-ov-file) file contains the client's requirements and instructions  
+- [README](https://github.com/udacity/cd12380-data-pipelines-with-airflow?tab=readme-ov-file) to understand the client's requirements and instructions  
 
-- [create_tables.sql](https://github.com/udacity/cd12380-data-pipelines-with-airflow/blob/main/create_tables.sql) file to create tables in Redshift
+- [create_tables.sql](https://github.com/udacity/cd12380-data-pipelines-with-airflow/blob/main/create_tables.sql) to create tables in Redshift
 
-- [plugins](https://github.com/udacity/cd12380-data-pipelines-with-airflow/tree/main/plugins)  
+- [plugins](https://github.com/udacity/cd12380-data-pipelines-with-airflow/tree/main/plugins):  
   - [helpers](https://github.com/udacity/cd12380-data-pipelines-with-airflow/tree/main/plugins/helpers): 
-  [sql_queries.py](https://github.com/udacity/cd12380-data-pipelines-with-airflow/blob/main/plugins/helpers/sql_queries.py) - helper class to insert data into the tables created with create_tables.sql
+  [sql_queries.py](https://github.com/udacity/cd12380-data-pipelines-with-airflow/blob/main/plugins/helpers/sql_queries.py) to insert data into the tables created with create_tables.sql
 
-- [dags](https://github.com/udacity/cd12380-data-pipelines-with-airflow/tree/main/dags): 
-[final_project.py](https://github.com/udacity/cd12380-data-pipelines-with-airflow/blob/main/dags/final_project.py) script contains one DAG and nine tasks  
-
-  - [operators](https://github.com/udacity/cd12380-data-pipelines-with-airflow/tree/main/plugins/operators)  
+  - [operators](https://github.com/udacity/cd12380-data-pipelines-with-airflow/tree/main/plugins/operators) contain starter code for 4 custom operators:  
     - [data_quality.py](https://github.com/udacity/cd12380-data-pipelines-with-airflow/blob/main/plugins/operators/data_quality.py)  
     - [load_dimension.py](https://github.com/udacity/cd12380-data-pipelines-with-airflow/blob/main/plugins/operators/load_dimension.py)  
     - [load_fact.py](https://github.com/udacity/cd12380-data-pipelines-with-airflow/blob/main/plugins/operators/load_fact.py)  
     - [stage_redshift.py](https://github.com/udacity/cd12380-data-pipelines-with-airflow/blob/main/plugins/operators/stage_redshift.py)
+
+- [dags](https://github.com/udacity/cd12380-data-pipelines-with-airflow/tree/main/dags): 
+[final_project.py](https://github.com/udacity/cd12380-data-pipelines-with-airflow/blob/main/dags/final_project.py) starter code contains one DAG and nine tasks  
 
 
 
